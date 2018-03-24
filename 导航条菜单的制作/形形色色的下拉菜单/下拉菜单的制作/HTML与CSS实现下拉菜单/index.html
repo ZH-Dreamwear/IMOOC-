@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML/CSS实现下拉菜单</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			border: none;
+		}
+
+		ul {
+			width: 500px;
+			height: 40px;
+			margin: 0 auto;
+			background: gray;
+		}
+		
+		li {width: 100px; float: left;list-style-type: none;position: relative;}
+
+		ul li a{
+			display: block;
+			width: 100px;
+			height: 40px;
+			float: left;
+			text-align: center;
+			line-height: 40px;
+			text-decoration: none;
+			color: #000;
+		}
+
+		a:hover {
+			background: orange;
+		}
+		
+		ul.second-list {
+			display: none;
+			position: absolute;
+			top: 40px;
+			left: 0px;
+			width: auto;
+		}
+
+		ul.second-list li {float: none;height: 40px;}
+
+		ul.second-list li a{
+			display:block;
+			text-indent: 2px;
+			width: 150px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border-bottom: 1px dashed gray;
+			background: #ae3333;
+		}
+
+		li:hover ul.second-list {
+			display: block;
+		}
+
+		.second-list li a:hover {
+			background: #333666;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li><a href="#">首 页</a></li>
+			<li><a href="#">课程大厅</a>
+				<ul class="second-list">
+					<li><a href="#">JavaScript课程0</a></li>
+					<li><a href="#">JQuery课程0</a></li>
+					<li><a href="#">React课程0</a></li>
+				</ul>
+			</li>
+			<li><a href="#">学习中心</a>
+				<ul class="second-list">
+					<li><a href="#">JavaScript课程1</a></li>
+					<li><a href="#">JQuery课程1</a></li>
+					<li><a href="#">React课程1</a></li>
+				</ul>
+			</li>
+			<li><a href="#">经典案例</a>
+				<ul class="second-list">
+					<li><a href="#">JavaScript课程2</a></li>
+					<li><a href="#">JQuery课程2</a></li>
+					<li><a href="#">React课程2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</div>
+</body>
+</html>

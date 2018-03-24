@@ -1,0 +1,39 @@
+ .top-nav
+        {
+            font-size: 12px;
+            font-weight: bold;
+            list-style: none;
+            border-bottom: 8px solid #DC4E1B;
+            overflow: auto;
+        }
+        .top-nav li
+        {
+            float: left;
+            margin-right: 1px;
+        }
+        .top-nav li a
+        {
+            line-height: 20px;
+            text-decoration: none;
+            background: #DDDDDD;
+            color: #666666;
+            display: block;
+            width: 180px;
+            text-align: center;
+        }
+       
+        /*设置正常状态英文菜单隐藏*/
+        .top-nav li span {
+            display:none;
+        }
+        
+        /*鼠标移动到链接上面时将英文菜单显示*/
+        a:hover span {
+            display:block;
+            background-color:#333666;
+        }
+        
+        /*鼠标移动到链接上面时将中文菜单位置上移*/
+        a:hover {
+            margin-top:-20px;
+        }

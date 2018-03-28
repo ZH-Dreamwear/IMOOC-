@@ -1,0 +1,247 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+nav {
+	background: #ccc;
+	height: 50px;
+}
+
+.logo {
+	float: left;
+	margin-left: 20px;
+}
+
+.logo a {
+	font-size: 20px;
+	font-weight: 800;
+}
+
+#nav ul li a,.logo a{
+	display: inline-block;
+	text-decoration: none;
+	color:#fff;
+	text-align: center;
+	width: 100px;
+	line-height: 50px;
+}
+
+#nav ul {
+	float: right;
+}
+
+#nav ul li {
+	display: inline-block;
+}
+
+#banner {
+	width: 100%;
+	height: 600px;
+	background: #666666;
+}
+
+.banner {
+	position: relative;
+}
+
+.banner-img {
+	width:100%;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.banner-img img {
+	width:100%;
+	height: 600px;
+}
+
+.inner {
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 200px;
+}
+p.words{
+	margin-top: 30px;
+}
+
+button {
+	border: none;
+	margin-top: 20px;
+	color: #eee;
+	background: #333;
+	padding: 10px 40px;
+}
+
+.more {
+	margin-top:160px;
+}
+
+.green {
+	background: #089DB0;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.green .hr {
+	background: #078494;
+	width: 60%;
+	height: 2px;
+	margin: 20px auto;
+}
+.icon-group {
+	text-align: center;
+	width: 1080px;
+	margin: 20px auto;
+	height: auto;
+}
+.icon-group .icon {
+	margin:20px;
+	display:inline-block;
+	height: 80px;
+	width: 80px;
+	background: #175c65;
+	color: #fff;
+	transform: rotate(45deg);
+
+}
+
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.gray {
+	background: #14191e;
+}
+
+.gray .img-section {
+	width:45%;
+}
+.gray .img-section img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.gray .text-section {
+	width:55%;
+	color: #fff;
+}
+
+.text-box h2 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.sub-title {
+	font-size: 22px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.text-box p {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.article-preview > div {
+	float: left;
+}
+
+/*用于设置文字段落距离盒子的间距*/
+.text-box {
+	padding-top: 68px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.purple {
+	padding: 80px;
+	background: #3F3965;
+	color: #fff;
+}
+
+.purple .heading-wrapper {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.purple .heading-wrapper .hr {
+	background: #373259;
+	width: 60%;
+	height: 2px;
+	margin: 10px auto;
+}
+
+.purple .card-group .card p {
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+.card {
+	float: left;
+	width: 50%;
+	min-height: 300px;
+	padding: 50px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*清除浮动*/
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.card:nth-child(1) {
+	background: rgba(0,0,0,0.04);
+}
+.card:nth-child(2) {
+	background: rgba(0,0,0,0.08);
+}
+.card:nth-child(3) {
+	background: rgba(0,0,0,0.12);
+}
+.card:nth-child(4) {
+	background: rgba(0,0,0,0.16);
+}
+.card:nth-child(5) {
+	background: rgba(0,0,0,0.20);
+}
+.card:nth-child(6) {
+	background: rgba(0,0,0,0.24);
+}
+
+
+/*页脚部分*/
+footer {
+	width: 100%;
+	height: 100px;
+	background:#14191e;
+	text-align: center;
+}
+
+ul.share-group {
+	width: 600px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.share-group li{
+	list-style-type: none;
+	display: inline-block;
+	width: 80px;
+	line-height: 60px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>信息滚动效果</title>
+	<style type="text/css">
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		#container {
+			width: 500px;
+			height: 90px;
+			border: 1px solid red;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul id="con1">
+			<li>item1item1item1</li>
+			<li>item2item2item2</li>
+			<li>item3item3item3</li>
+			<li>item4item4item4</li>
+			<li>item5item5item5</li>
+			<li>item6item6item6</li>
+			<li>item7item7item7</li>
+			<li>item8item8item8</li>
+			<li>item9item9item9</li>
+		</ul>
+		<ul id="con2"></ul>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var area = document.getElementById("container");
+			var con1 = document.getElementById("con1");
+			var con2 = document.getElementById("con2");
+			con2.innerHTML = con1.innerHTML;
+			area.scrollTop = 0;
+			function scrollUp(){
+				if(area.scrollTop >= con1.offsetHeight){
+					area.scrollTop = 0;
+				}else {
+						area.scrollTop++;
+				}
+			}
+			
+			var temp = setInterval(scrollUp,50);
+
+		}
+	</script>
+</body>
+</html>
